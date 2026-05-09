@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="由 notes 目录中的 Markdown 自动生成的学术知识网站。">
+  <title>Zotero–Obsidian–Codex指南 · AI Research Knowledge Site</title>
+  <link rel="stylesheet" href="/_site/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="topbar">
+    <button class="menu-button" type="button" aria-label="打开导航" data-menu-button>☰</button>
+    <a class="brand" href="/">AI Research Knowledge Site</a>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-title">Knowledge Notes</div>
+      <nav class="site-nav" aria-label="左侧导航">
+        <a class="nav-link depth-0 active" href="/workflow-summary.html" aria-current="page"><span>Zotero–Obsidian–Codex指南</span></a>
+      </nav>
+    </aside>
+    <main id="content" class="content">
+      <article class="paper">
+        <div class="paper-meta">
+          <span>Source: workflow-summary.md</span>
+          <span>Updated: 2026-05-08</span>
+        </div>
+        <h1 id="zoteroE28093obsidianE28093codexE68C87E58D97">Zotero–Obsidian–Codex指南</h1>
+<hr>
+<h2 id="E695B4E4B8AAE5B7A5E4BD9CE6B581E588B0E5BA95E698AFE4BB80E4B988EFBC9F">整个工作流到底是什么？</h2>
+<p>PDF文献<br>
+↓<br>
+Zotero 管理<br>
+↓<br>
+Obsidian 整理知识<br>
+↓<br>
+Codex + Skills 分析</p>
+<hr>
+<h2 id="E7ACACE4B880E983A8E58886EFBC9AE6AF8FE4B8AAE8BDAFE4BBB6E8B49FE8B4A3E4BB80E4B988">第一部分：每个软件负责什么</h2>
+<h3 id="1-zotero">1. Zotero</h3>
+<p>Zotero 是：<br>
+文献管理器</p>
+<p>它负责：</p>
+<ul>
+<li>存 PDF</li>
+<li>存文献条目</li>
+<li>自动生成引用</li>
+<li>管理标签</li>
+<li>做文献分类</li>
+<li>写批注</li>
+<li>同步论文</li>
+</ul>
+<p>你可以理解成：<br>
+学术版收藏夹 + PDF 图书馆, 全部结构化。</p>
+<hr>
+<h3 id="2-obsidian">2. Obsidian</h3>
+<p>Obsidian 是：<br>
+知识组织工具<br>
+网络化知识，它们会互相链接，形成：<br>
+<strong>知识网络</strong></p>
+<h4 id="obsidian-E8B49FE8B4A3E4BB80E4B988">Obsidian 负责什么</h4>
+<ul>
+<li>研究笔记</li>
+<li>思考过程</li>
+<li>理论关联</li>
+<li>概念网络</li>
+<li>灵感整理</li>
+<li>论文框架</li>
+</ul>
+<p>你可以理解成：<br>
+AI 时代的大脑</p>
+<h4 id="obsidian-E4B8BAE4BB80E4B988E98082E59088-ai">Obsidian 为什么适合 AI</h4>
+<p>因为它使用 <strong>Markdown</strong>，Markdown 是 AI 最容易读取的文本格式<br>
+所以：</p>
+<ul>
+<li>GPT</li>
+<li>Claude</li>
+<li>Codex<br>
+都特别喜欢 Obsidian。</li>
+</ul>
+<h4 id="obsidian-E58F8CE59091E993BEE68EA5E4B88EE79FA5E8AF86E59BBEE8B0B1">Obsidian 双向链接与知识图谱</h4>
+<ul>
+<li>双向链接：笔记互相关联，概念与文献节点既能引用也能被引用</li>
+<li>知识图谱（Graph View）：
+<ul>
+<li>可视化知识网络</li>
+<li>辅助发现研究空白、理清主题结构、规划写作</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-codex">3. Codex</h3>
+<h4 id="codex-E5928C-chatgpt-E79A84E58CBAE588AB">Codex 和 ChatGPT 的区别</h4>
+<ul>
+<li>ChatGPT：单轮聊天</li>
+<li>Codex：项目级 AI 工作空间</li>
+</ul>
+<p>Codex 会：</p>
+<ul>
+<li>读取整个项目文件夹</li>
+<li>理解项目结构</li>
+<li>自动分析 Markdown</li>
+<li>自动执行任务</li>
+</ul>
+<hr>
+<h2 id="E7ACACE4BA8CE983A8E58886EFBC9AE4B889E88085E88194E59088E5B7A5E4BD9CE6B581">第二部分：三者联合工作流</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>工具</th>
+<th>操作与目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文献收集</td>
+<td>Zotero</td>
+<td>PDF/数据库/网页收集，导出 CSV、元数据整理</td>
+</tr>
+<tr>
+<td>文献整理</td>
+<td>Obsidian</td>
+<td>CSV → Markdown；建立笔记、双向链接、Graph View</td>
+</tr>
+<tr>
+<td>文献分析</td>
+<td>Codex</td>
+<td>分析 Markdown 内容：趋势、缺口、研究方向</td>
+</tr>
+<tr>
+<td>输出</td>
+<td>Obsidian/网页</td>
+<td>生成研究报告、知识图谱、写作素材、网页展示</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="E7ACACE4B889E983A8E58886EFBC9Azotero-2B-codex-E58699E4BD9CE696B9E59091E5889DE7A094E7A9B6E8AF95E9AA8C">第三部分：Zotero + Codex 写作方向初研究试验</h2>
+<ul>
+<li>
+<p><strong>STEP 1：Zotero 文献库搭建</strong><br>
+导出文献（格式建议）：CSV（最直观，方便后续处理）<br>
+包含必要信息，尤其是摘要（Codex 分析核心）</p>
+</li>
+<li>
+<p><strong>STEP 2：将 CSV 转换为 Markdown 表格</strong></p>
+<ul>
+<li>法 1: <a href="https://www.convertcsv.com/csv-to-markdown.htm" target="_blank" rel="noopener noreferrer">ConvertCSV.com CSV→Markdown</a></li>
+<li>法 2: Excel/Google Sheets → 使用公式拼接每行生成 Markdown</li>
+<li>法 3: 文献量大可用 Python 脚本批量生成 Markdown</li>
+</ul>
+<p>目的：让 Codex 能直接读取表格中的文献信息，提升模型理解和分析质量。</p>
+</li>
+<li>
+<p><strong>STEP 3：Codex 分析</strong><br>
+我有一组关于“XXX主题”的文献在上传的条目里：<br>
+（粘贴 Markdown 表格文件）<br>
+请帮我：</p>
+<ol>
+<li>分析研究趋势</li>
+<li>找出研究空白/未解决问题</li>
+<li>给出潜在写作方向或研究角度</li>
+<li>推荐核心参考文献（标 DOI 或标题）</li>
+</ol>
+</li>
+</ul>
+<p>在回答中结合核心期刊、近年的研究进展，不仅局限于提供的文献。</p>
+<hr>
+<h2 id="E7ACACE59B9BE983A8E58886EFBC9Askills">第四部分：Skills</h2>
+<ul>
+<li><strong>AI 工作流程说明书</strong><br>
+使用的两个 Skills</li>
+</ul>
+<h3 id="1-research-vault-literature-retrieval">1. Research Vault Literature Retrieval</h3>
+<p>作用：</p>
+<ul>
+<li>检索本地知识库</li>
+<li>阅读 Markdown</li>
+<li>搜索论文</li>
+<li>提取研究主题</li>
+<li>建立知识关联</li>
+</ul>
+<h3 id="2-zotero-analytical-workflow-skills">2. Zotero Analytical Workflow Skills</h3>
+<p>作用：</p>
+<ul>
+<li>分析文献关系</li>
+<li>找理论脉络</li>
+<li>找研究缺口</li>
+<li>比较研究方法</li>
+<li>生成综述结构</li>
+</ul>
+<hr>
+<h2 id="E7ACACE4BA94E983A8E58886EFBC9Askills-E588B0E5BA95E8A385E59CA8E593AAE9878CEFBC9F">第五部分：Skills 到底装在哪里？</h2>
+<p>放在项目文件夹里，正确结构示例：</p>
+<pre><code class="language-text">AI-Research-Site/
+│
+├── notes/
+├── pdfs/
+└── .codex/
+    └── skills/
+        ├── Research Vault Literature Retrieval/
+        └── Zotero Analytical Workflow Skills/</code></pre>
+
+      </article>
+    </main>
+    <aside class="toc" aria-label="自动目录">
+      <div class="toc-title">目录</div>
+      <nav><a class="toc-link level-2" href="#E695B4E4B8AAE5B7A5E4BD9CE6B581E588B0E5BA95E698AFE4BB80E4B988EFBC9F">整个工作流到底是什么？</a>
+<a class="toc-link level-2" href="#E7ACACE4B880E983A8E58886EFBC9AE6AF8FE4B8AAE8BDAFE4BBB6E8B49FE8B4A3E4BB80E4B988">第一部分：每个软件负责什么</a>
+<a class="toc-link level-3" href="#1-zotero">1. Zotero</a>
+<a class="toc-link level-3" href="#2-obsidian">2. Obsidian</a>
+<a class="toc-link level-4" href="#obsidian-E8B49FE8B4A3E4BB80E4B988">Obsidian 负责什么</a>
+<a class="toc-link level-4" href="#obsidian-E4B8BAE4BB80E4B988E98082E59088-ai">Obsidian 为什么适合 AI</a>
+<a class="toc-link level-4" href="#obsidian-E58F8CE59091E993BEE68EA5E4B88EE79FA5E8AF86E59BBEE8B0B1">Obsidian 双向链接与知识图谱</a>
+<a class="toc-link level-3" href="#3-codex">3. Codex</a>
+<a class="toc-link level-4" href="#codex-E5928C-chatgpt-E79A84E58CBAE588AB">Codex 和 ChatGPT 的区别</a>
+<a class="toc-link level-2" href="#E7ACACE4BA8CE983A8E58886EFBC9AE4B889E88085E88194E59088E5B7A5E4BD9CE6B581">第二部分：三者联合工作流</a>
+<a class="toc-link level-2" href="#E7ACACE4B889E983A8E58886EFBC9Azotero-2B-codex-E58699E4BD9CE696B9E59091E5889DE7A094E7A9B6E8AF95E9AA8C">第三部分：Zotero + Codex 写作方向初研究试验</a>
+<a class="toc-link level-2" href="#E7ACACE59B9BE983A8E58886EFBC9Askills">第四部分：Skills</a>
+<a class="toc-link level-3" href="#1-research-vault-literature-retrieval">1. Research Vault Literature Retrieval</a>
+<a class="toc-link level-3" href="#2-zotero-analytical-workflow-skills">2. Zotero Analytical Workflow Skills</a>
+<a class="toc-link level-2" href="#E7ACACE4BA94E983A8E58886EFBC9Askills-E588B0E5BA95E8A385E59CA8E593AAE9878CEFBC9F">第五部分：Skills 到底装在哪里？</a></nav>
+    </aside>
+  </div>
+  <script src="/_site/site.js"></script>
+</body>
+</html>

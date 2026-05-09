@@ -1,0 +1,1 @@
+const button=document.querySelector('[data-menu-button]');button?.addEventListener('click',()=>document.body.classList.toggle('nav-open'));document.querySelectorAll('.site-nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));
